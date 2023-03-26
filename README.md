@@ -8,4 +8,6 @@ Menu Music - https://www.youtube.com/watch?v=P4bKZT_Eg4A
 
 Start Background - https://w.wallha.com/ws/13/XOUasRlv.jpg
 
-Menu Background -  https://rare-gallery.com/334072-cyberpunk-city-night-scenery-sci-fi-4k.html 
+Gameplay Background - https://www.wallpaperflare.com/aerial-view-photography-of-cityscape-during-night-time-digital-art-wallpaper-tskjz
+
+Bridge Image - https://tr.pinterest.com/pin/861102391224235031/
