@@ -195,7 +195,7 @@ void GameServer::Tick()
 	if (Now() >= m_time_for_next_spawn + m_last_spawn_time)
 	{
 		//Not going to spawn enemies near the end
-		if (m_battlefield_rect.top > 600.f)
+		if (m_battlefield_rect.top > 950.f)
 		{
 			std::size_t enemy_count = 1 + Utility::RandomInt(2);
 			float spawn_centre = static_cast<float>(Utility::RandomInt(500) - 250);
