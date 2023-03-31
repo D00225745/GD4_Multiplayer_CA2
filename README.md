@@ -15,3 +15,7 @@ Bridge Image - https://tr.pinterest.com/pin/861102391224235031/
 Button Sound - https://www.youtube.com/watch?v=Tn5ajnaJV9c
 
 Fighter Aircraft - https://www.pngwing.com/en/free-png-ztszc
+
+Boss Aircraft - https://favpng.com/png_view/sprite-battle-garegga-boss-sprite-video-game-png/WR4jE6aM
+
+Find Coordinates of Image Online (Website used to find coordinates of the newly added aircrafts) - https://programminghead.com/Projects/find-coordinates-of-image-online.html
