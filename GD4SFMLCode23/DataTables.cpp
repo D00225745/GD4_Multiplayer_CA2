@@ -47,7 +47,7 @@ std::vector<AircraftData> InitializeAircraftData()
     data[static_cast<int>(AircraftType::kBoss)].m_speed = 10.f;
     data[static_cast<int>(AircraftType::kBoss)].m_fire_interval = sf::seconds(2);
     data[static_cast<int>(AircraftType::kBoss)].m_texture = Texture::kEntities;
-    data[static_cast<int>(AircraftType::kBoss)].m_texture_rect = sf::IntRect(198, 66, 279, 103);
+    data[static_cast<int>(AircraftType::kBoss)].m_texture_rect = sf::IntRect(194, 66, 92, 60);
 
     //AI
     data[static_cast<int>(AircraftType::kBoss)].m_directions.emplace_back(Direction(+45.f, 50.f));
