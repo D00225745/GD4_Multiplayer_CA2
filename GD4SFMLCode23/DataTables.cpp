@@ -42,6 +42,21 @@ std::vector<AircraftData> InitializeAircraftData()
     data[static_cast<int>(AircraftType::kAvenger)].m_directions.emplace_back(Direction(+45.f, 50.f));
     data[static_cast<int>(AircraftType::kAvenger)].m_has_roll_animation = false;
     return data;
+
+    data[static_cast<int>(AircraftType::kBoss)].m_hitpoints = 500;
+    data[static_cast<int>(AircraftType::kBoss)].m_speed = 10.f;
+    data[static_cast<int>(AircraftType::kBoss)].m_fire_interval = sf::seconds(2);
+    data[static_cast<int>(AircraftType::kBoss)].m_texture = Texture::kBoss;
+    data[static_cast<int>(AircraftType::kBoss)].m_texture_rect = sf::IntRect(228, 0, 60, 59);
+
+    //AI
+    data[static_cast<int>(AircraftType::kBoss)].m_directions.emplace_back(Direction(+45.f, 50.f));
+    data[static_cast<int>(AircraftType::kBoss)].m_directions.emplace_back(Direction(0.f, 50.f));
+    data[static_cast<int>(AircraftType::kBoss)].m_directions.emplace_back(Direction(-45.f, 100.f));
+    data[static_cast<int>(AircraftType::kBoss)].m_directions.emplace_back(Direction(0.f, 50.f));
+    data[static_cast<int>(AircraftType::kBoss)].m_directions.emplace_back(Direction(+45.f, 50.f));
+    data[static_cast<int>(AircraftType::kBoss)].m_has_roll_animation = false;
+    return data;
 }
 
 std::vector<ProjectileData> InitializeProjectileData()

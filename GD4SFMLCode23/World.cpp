@@ -317,7 +317,7 @@ void World::AddEnemies()
 	{
 		return;
 	}
-	//Add all emenies
+	//Add all enemies
 	AddEnemy(AircraftType::kRaptor, 0.f, 500.f);
 	AddEnemy(AircraftType::kRaptor, 0.f, 1000.f);
 	AddEnemy(AircraftType::kRaptor, +100.f, 1150.f);
