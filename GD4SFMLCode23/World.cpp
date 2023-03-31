@@ -318,21 +318,21 @@ void World::AddEnemies()
 		return;
 	}
 	//Add all enemies
-	AddEnemy(AircraftType::kRaptor, 0.f, 500.f);
-	AddEnemy(AircraftType::kRaptor, 0.f, 1000.f);
-	AddEnemy(AircraftType::kRaptor, +100.f, 1150.f);
+	AddEnemy(AircraftType::kBoss, 0.f, 500.f);
+	AddEnemy(AircraftType::kBoss, 0.f, 1000.f);
+	AddEnemy(AircraftType::kBoss, +100.f, 1150.f);
 	AddEnemy(AircraftType::kRaptor, -100.f, 1150.f);
-	AddEnemy(AircraftType::kAvenger, 70.f, 1500.f);
-	AddEnemy(AircraftType::kAvenger, -70.f, 1500.f);
+	AddEnemy(AircraftType::kBoss, 70.f, 1500.f);
+	AddEnemy(AircraftType::kBoss, -70.f, 1500.f);
 	AddEnemy(AircraftType::kAvenger, -70.f, 1710.f);
 	AddEnemy(AircraftType::kAvenger, 70.f, 1700.f);
-	AddEnemy(AircraftType::kAvenger, 30.f, 1850.f);
+	AddEnemy(AircraftType::kBoss, 30.f, 1850.f);
 	AddEnemy(AircraftType::kRaptor, 300.f, 2200.f);
 	AddEnemy(AircraftType::kRaptor, -300.f, 2200.f);
 	AddEnemy(AircraftType::kRaptor, 0.f, 2200.f);
 	AddEnemy(AircraftType::kRaptor, 0.f, 2500.f);
 	AddEnemy(AircraftType::kAvenger, -300.f, 2700.f);
-	AddEnemy(AircraftType::kAvenger, -300.f, 2700.f);
+	AddEnemy(AircraftType::kBoss, -300.f, 2700.f);
 	AddEnemy(AircraftType::kRaptor, 0.f, 3000.f);
 	AddEnemy(AircraftType::kRaptor, 250.f, 3250.f);
 	AddEnemy(AircraftType::kRaptor, -250.f, 3250.f);
