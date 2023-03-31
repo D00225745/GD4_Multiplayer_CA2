@@ -23,9 +23,9 @@ std::vector<AircraftData> InitializeAircraftData()
     data[static_cast<int>(AircraftType::kRaptor)].m_texture_rect = sf::IntRect(144, 0, 84, 64);
 
     //AI
-    data[static_cast<int>(AircraftType::kRaptor)].m_directions.emplace_back(Direction(+45.f, 80.f));
+    data[static_cast<int>(AircraftType::kRaptor)].m_directions.emplace_back(Direction(+20.f, 80.f));
     data[static_cast<int>(AircraftType::kRaptor)].m_directions.emplace_back(Direction(-45.f, 160.f));
-    data[static_cast<int>(AircraftType::kRaptor)].m_directions.emplace_back(Direction(+45.f, 80.f));
+    data[static_cast<int>(AircraftType::kRaptor)].m_directions.emplace_back(Direction(+20.f, 80.f));
     data[static_cast<int>(AircraftType::kRaptor)].m_has_roll_animation = false;
 
     data[static_cast<int>(AircraftType::kAvenger)].m_hitpoints = 40;
