@@ -201,7 +201,7 @@ void GameServer::Tick()
 		if (m_battlefield_rect.top > 60.f)
 		{
 			std::size_t enemy_count = 1 + Utility::RandomInt(10);  //RandomInt was 2
-			float spawn_centre = static_cast<float>(Utility::RandomInt(500) - 450);  //RandomInt(500) - 250
+			float spawn_centre = static_cast<float>(Utility::RandomInt(500) - 460);  //RandomInt(500) - 250
 
 			//If there is only one enemy it is at the spawn_centre
 			float plane_distance = 0.f;
