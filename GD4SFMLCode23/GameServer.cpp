@@ -5,6 +5,7 @@
 #include <SFML/Network/Packet.hpp>
 
 #include "Aircraft.hpp"
+#include "World.hpp"
 #include "PickupType.hpp"
 #include "Utility.hpp"
 #include <iostream>
@@ -191,6 +192,8 @@ void GameServer::Tick()
 		}
 	}
 
+	
+
 	//Check if it is time to spawn enemies
 	if (Now() >= m_time_for_next_spawn + m_last_spawn_time)
 	{
@@ -230,6 +233,37 @@ void GameServer::Tick()
 		}
 	}
 }
+
+/*
+//Attempts to manually put in enemies to multiplayer network mode
+void GameServer::SpawnEnemies()
+{
+	//Spawn an enemy when it is relevant i.e when about to come on screen - in BattleFieldBounds
+	while (!m_enemy_spawn_points.empty() && m_enemy_spawn_points.back().m_y > GetBattlefieldBounds().top)
+	{
+		SpawnPoint spawn = m_enemy_spawn_points.back();
+
+		std::unique_ptr<Aircraft> enemy(new Aircraft(spawn.m_type, m_textures, m_fonts));
+		enemy->setPosition(spawn.m_x, spawn.m_y);
+		enemy->setRotation(180.f);
+		//If the game is networked the server is responsible for spawning pickups
+
+		if (m_networked_world)
+		{
+			enemy->DisablePickups();
+		}
+		m_scene_layers[static_cast<int>(Layers::kUpperAir)]->AttachChild(std::move(enemy));
+		m_enemy_spawn_points.pop_back();
+	}
+}
+
+void GameServer::AddEnemy(AircraftType type, float relX, float relY)
+{
+	SpawnPoint spawn(type, m_spawn_position.x + relX, m_spawn_position.y - relY);
+	m_enemy_spawn_points.emplace_back(spawn);
+}
+
+*/
 
 sf::Time GameServer::Now() const
 {
