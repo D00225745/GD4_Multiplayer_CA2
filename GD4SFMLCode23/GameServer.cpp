@@ -200,7 +200,7 @@ void GameServer::Tick()
 		//Not going to spawn enemies near the end
 		if (m_battlefield_rect.top > 60.f)
 		{
-			std::size_t enemy_count = 1 + Utility::RandomInt(2);
+			std::size_t enemy_count = 1 + Utility::RandomInt(3);  //RandomInt was 2
 			float spawn_centre = static_cast<float>(Utility::RandomInt(500) - 250);
 
 			//If there is only one enemy it is at the spawn_centre
@@ -212,6 +212,13 @@ void GameServer::Tick()
 			{
 				plane_distance = static_cast<float>(150 + Utility::RandomInt(250));
 				next_spawn_position = spawn_centre - plane_distance / 2.f;
+			}
+
+			//If there are two then they are centred on the spawn centre
+			if (enemy_count == 3)
+			{
+				plane_distance = static_cast<float>(150 + Utility::RandomInt(250));
+				next_spawn_position = spawn_centre - plane_distance / 3.f;
 			}
 			
 			//TODO Do we really need two packets here?
