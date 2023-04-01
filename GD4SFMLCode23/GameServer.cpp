@@ -200,7 +200,7 @@ void GameServer::Tick()
 		//Not going to spawn enemies near the end
 		if (m_battlefield_rect.top > 60.f)
 		{
-			std::size_t enemy_count = 1 + Utility::RandomInt(3);  //RandomInt was 2
+			std::size_t enemy_count = 1 + Utility::RandomInt(8);  //RandomInt was 2
 			float spawn_centre = static_cast<float>(Utility::RandomInt(500) - 250);
 
 			//If there is only one enemy it is at the spawn_centre
@@ -214,13 +214,48 @@ void GameServer::Tick()
 				next_spawn_position = spawn_centre - plane_distance / 2.f;
 			}
 
-			//If there are two then they are centred on the spawn centre
+			//Berk - If there are three then they are centred on the spawn centre
 			if (enemy_count == 3)
 			{
-				plane_distance = static_cast<float>(150 + Utility::RandomInt(250));
+				plane_distance = static_cast<float>(150 + Utility::RandomInt(350));
 				next_spawn_position = spawn_centre - plane_distance / 3.f;
 			}
 			
+			//Berk - If there are four then they are centred on the spawn centre
+			if (enemy_count == 4)
+			{
+				plane_distance = static_cast<float>(150 + Utility::RandomInt(450));
+				next_spawn_position = spawn_centre - plane_distance / 4.f;
+			}
+
+			//Berk - If there are four then they are centred on the spawn centre
+			if (enemy_count == 5)
+			{
+				plane_distance = static_cast<float>(150 + Utility::RandomInt(450));
+				next_spawn_position = spawn_centre - plane_distance / 5.f;
+			}
+
+			//Berk - If there are four then they are centred on the spawn centre
+			if (enemy_count == 6)
+			{
+				plane_distance = static_cast<float>(150 + Utility::RandomInt(450));
+				next_spawn_position = spawn_centre - plane_distance / 6.f;
+			}
+
+			//Berk - If there are four then they are centred on the spawn centre
+			if (enemy_count == 7)
+			{
+				plane_distance = static_cast<float>(150 + Utility::RandomInt(450));
+				next_spawn_position = spawn_centre - plane_distance / 7.f;
+			}
+
+			//Berk - If there are four then they are centred on the spawn centre
+			if (enemy_count == 8)
+			{
+				plane_distance = static_cast<float>(150 + Utility::RandomInt(450));
+				next_spawn_position = spawn_centre - plane_distance / 8.f;
+			}
+
 			//TODO Do we really need two packets here?
 			//Send a spawn packet to the clients
 			for (std::size_t i = 0; i < enemy_count; ++i)
