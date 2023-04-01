@@ -17,7 +17,7 @@ std::vector<AircraftData> InitializeAircraftData()
     data[static_cast<int>(AircraftType::kEagle)].m_has_roll_animation = true;
 
     data[static_cast<int>(AircraftType::kRaptor)].m_hitpoints = 20;
-    data[static_cast<int>(AircraftType::kRaptor)].m_speed = 80.f;
+    data[static_cast<int>(AircraftType::kRaptor)].m_speed = 100.f;
     data[static_cast<int>(AircraftType::kRaptor)].m_fire_interval = sf::Time::Zero;
     data[static_cast<int>(AircraftType::kRaptor)].m_texture = Texture::kEntities;
     data[static_cast<int>(AircraftType::kRaptor)].m_texture_rect = sf::IntRect(144, 0, 84, 64);
@@ -29,7 +29,7 @@ std::vector<AircraftData> InitializeAircraftData()
     data[static_cast<int>(AircraftType::kRaptor)].m_has_roll_animation = false;
 
     data[static_cast<int>(AircraftType::kAvenger)].m_hitpoints = 40;
-    data[static_cast<int>(AircraftType::kAvenger)].m_speed = 50.f;
+    data[static_cast<int>(AircraftType::kAvenger)].m_speed = 60.f;
     data[static_cast<int>(AircraftType::kAvenger)].m_fire_interval = sf::seconds(2);
     data[static_cast<int>(AircraftType::kAvenger)].m_texture = Texture::kEntities;
     data[static_cast<int>(AircraftType::kAvenger)].m_texture_rect = sf::IntRect(228, 0, 60, 59);
@@ -44,7 +44,7 @@ std::vector<AircraftData> InitializeAircraftData()
     
 
     data[static_cast<int>(AircraftType::kBoss)].m_hitpoints = 100;
-    data[static_cast<int>(AircraftType::kBoss)].m_speed = 10.f;
+    data[static_cast<int>(AircraftType::kBoss)].m_speed = 20.f;
     data[static_cast<int>(AircraftType::kBoss)].m_fire_interval = sf::seconds(2);
     data[static_cast<int>(AircraftType::kBoss)].m_texture = Texture::kEntities;
     data[static_cast<int>(AircraftType::kBoss)].m_texture_rect = sf::IntRect(194, 66, 92, 60);
