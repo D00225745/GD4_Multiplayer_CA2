@@ -169,7 +169,7 @@ void Aircraft::UpdateTexts()
 	{
 		//m_health_display->SetString(std::to_string(GetHitPoints()) + "HP");
 		std::string playerName = "Player " + std::to_string(m_identifier) + "\n";
-		m_health_display->SetString(playerName + std::to_string(GetHitPoints()) + "HP");
+		m_health_display->SetString(playerName + std::to_string(GetHitPoints()) + "HP" + "\n");
 	}
 	m_health_display->setPosition(0.f, 50.f);
 	m_health_display->setRotation(-getRotation());
