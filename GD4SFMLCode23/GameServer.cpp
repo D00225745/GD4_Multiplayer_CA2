@@ -31,7 +31,7 @@ GameServer::GameServer(sf::Vector2f battlefield_size)
 	, m_aircraft_identifer_counter(1)
 	, m_waiting_thread_end(false)
 	, m_last_spawn_time(sf::Time::Zero)
-	, m_time_for_next_spawn(sf::seconds(5.f))
+	, m_time_for_next_spawn(sf::seconds(0.f))  //was 5
 {
 	m_listener_socket.setBlocking(false);
 	m_peers[0].reset(new RemotePeer());
@@ -195,7 +195,7 @@ void GameServer::Tick()
 	if (Now() >= m_time_for_next_spawn + m_last_spawn_time)
 	{
 		//Not going to spawn enemies near the end
-		if (m_battlefield_rect.top > 950.f)
+		if (m_battlefield_rect.top > 960.f)
 		{
 			std::size_t enemy_count = 1 + Utility::RandomInt(2);
 			float spawn_centre = static_cast<float>(Utility::RandomInt(500) - 250);
@@ -210,7 +210,7 @@ void GameServer::Tick()
 				plane_distance = static_cast<float>(150 + Utility::RandomInt(250));
 				next_spawn_position = spawn_centre - plane_distance / 2.f;
 			}
-
+			
 			//TODO Do we really need two packets here?
 			//Send a spawn packet to the clients
 			for (std::size_t i = 0; i < enemy_count; ++i)
@@ -218,7 +218,7 @@ void GameServer::Tick()
 				sf::Packet packet;
 				packet << static_cast<sf::Int32>(Server::PacketType::kSpawnEnemy);
 				packet << static_cast<sf::Int32>(1 + Utility::RandomInt(static_cast<int>(AircraftType::kAircraftCount) - 1));
-				packet << m_world_height - m_battlefield_rect.top + 500;
+				packet << m_world_height - m_battlefield_rect.top + 100;  // was originally 500
 				packet << next_spawn_position;
 
 				next_spawn_position += plane_distance / 2.f;
@@ -226,7 +226,7 @@ void GameServer::Tick()
 			}
 
 			m_last_spawn_time = Now();
-			m_time_for_next_spawn = sf::milliseconds(2000 + Utility::RandomInt(6000));
+			m_time_for_next_spawn = sf::milliseconds(2000 + Utility::RandomInt(6000));  //was originally milisec 2000 randomInt 6000
 		}
 	}
 }
