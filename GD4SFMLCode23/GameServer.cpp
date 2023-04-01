@@ -195,7 +195,7 @@ void GameServer::Tick()
 	if (Now() >= m_time_for_next_spawn + m_last_spawn_time)
 	{
 		//Not going to spawn enemies near the end
-		if (m_battlefield_rect.top > 960.f)
+		if (m_battlefield_rect.top > 980.f)
 		{
 			std::size_t enemy_count = 1 + Utility::RandomInt(2);
 			float spawn_centre = static_cast<float>(Utility::RandomInt(500) - 250);
@@ -218,7 +218,7 @@ void GameServer::Tick()
 				sf::Packet packet;
 				packet << static_cast<sf::Int32>(Server::PacketType::kSpawnEnemy);
 				packet << static_cast<sf::Int32>(1 + Utility::RandomInt(static_cast<int>(AircraftType::kAircraftCount) - 1));
-				packet << m_world_height - m_battlefield_rect.top + 100;  // was originally 500
+				packet << m_world_height - m_battlefield_rect.top + 50;  // was originally 500
 				packet << next_spawn_position;
 
 				next_spawn_position += plane_distance / 2.f;
