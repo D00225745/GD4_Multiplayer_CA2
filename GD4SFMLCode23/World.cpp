@@ -373,6 +373,7 @@ void World::AddEnemies()
 	AddEnemy(AircraftType::kRaptor, 0.f, 4400.f);
 	AddEnemy(AircraftType::kRaptor, 500.f, 4400.f);
 	AddEnemy(AircraftType::kRaptor, 850.f, 4400.f);
+	AddEnemy(AircraftType::kRaptor, -500.f, 4400.f);
 	AddEnemy(AircraftType::kAvenger, 0.f, 4500.f);
 	AddEnemy(AircraftType::kAvenger, -200.f, 4500.f);
 	AddEnemy(AircraftType::kAvenger, -900.f, 4500.f);
@@ -385,12 +386,14 @@ void World::AddEnemies()
 	AddEnemy(AircraftType::kRaptor, 950.f, 4800.f);
 	AddEnemy(AircraftType::kRaptor, -250.f, 4800.f);
 	AddEnemy(AircraftType::kRaptor, -550.f, 4800.f);
+	AddEnemy(AircraftType::kRaptor, -720.f, 4800.f);
 	AddEnemy(AircraftType::kRaptor, -950.f, 4800.f);
 	AddEnemy(AircraftType::kRaptor, 900.f, 5000.f);
 	AddEnemy(AircraftType::kRaptor, 0.f, 5000.f);
 	AddEnemy(AircraftType::kRaptor, 650.f, 5000.f);
 	AddEnemy(AircraftType::kRaptor, 300.f, 5000.f);
 	AddEnemy(AircraftType::kRaptor, -300.f, 5000.f);
+	AddEnemy(AircraftType::kRaptor, -420.f, 5000.f);
 	AddEnemy(AircraftType::kRaptor, -650.f, 5000.f);
 	AddEnemy(AircraftType::kRaptor, -900.f, 5000.f);
 	AddEnemy(AircraftType::kRaptor, 900.f, 5000.f);
@@ -398,6 +401,7 @@ void World::AddEnemies()
 	AddEnemy(AircraftType::kAvenger, 650.f, 5400.f);
 	AddEnemy(AircraftType::kAvenger, 300.f, 5400.f);
 	AddEnemy(AircraftType::kAvenger, -300.f, 5400.f);
+	AddEnemy(AircraftType::kAvenger, -420.f, 5400.f);
 	AddEnemy(AircraftType::kAvenger, -650.f, 5400.f);
 	AddEnemy(AircraftType::kAvenger, -900.f, 5400.f);
 	AddEnemy(AircraftType::kRaptor, -900.f, 5650.f);
@@ -408,7 +412,8 @@ void World::AddEnemies()
 	AddEnemy(AircraftType::kRaptor, 600.f, 5650.f);
 	AddEnemy(AircraftType::kRaptor, 900.f, 5650.f);
 	AddEnemy(AircraftType::kAvenger, -300.f, 5750.f);
-	AddEnemy(AircraftType::kAvenger, -650.f, 5750.f);
+	AddEnemy(AircraftType::kAvenger, -450.f, 5750.f);
+	AddEnemy(AircraftType::kAvenger, -700.f, 5750.f);
 	AddEnemy(AircraftType::kAvenger, -900.f, 5750.f);
 	AddEnemy(AircraftType::kRaptor, -900.f, 6000.f);
 	AddEnemy(AircraftType::kRaptor, -650.f, 6000.f);
@@ -417,7 +422,8 @@ void World::AddEnemies()
 	AddEnemy(AircraftType::kRaptor, 250.f, 6000.f);
 	AddEnemy(AircraftType::kRaptor, 600.f, 6000.f);
 	AddEnemy(AircraftType::kRaptor, 900.f, 6000.f);
-	AddEnemy(AircraftType::kAvenger, -300.f, 6250.f);
+	AddEnemy(AircraftType::kAvenger, -200.f, 6250.f);
+	AddEnemy(AircraftType::kAvenger, -400.f, 6250.f);
 	AddEnemy(AircraftType::kAvenger, -650.f, 6250.f);
 	AddEnemy(AircraftType::kAvenger, -900.f, 6250.f);
 	AddEnemy(AircraftType::kAvenger, 300.f, 6250.f);
@@ -432,13 +438,16 @@ void World::AddEnemies()
 	AddEnemy(AircraftType::kAvenger, -900.f, 6850.f);
 	AddEnemy(AircraftType::kRaptor, -900.f, 7000.f);
 	AddEnemy(AircraftType::kRaptor, -650.f, 7000.f);
+	AddEnemy(AircraftType::kRaptor, -400.f, 7000.f);
 	AddEnemy(AircraftType::kRaptor, -250.f, 7000.f);
 	AddEnemy(AircraftType::kRaptor, 0.f, 7000.f);
 	AddEnemy(AircraftType::kRaptor, 250.f, 7000.f);
+	AddEnemy(AircraftType::kRaptor, 400.f, 7000.f);
 	AddEnemy(AircraftType::kRaptor, 600.f, 7000.f);
 	AddEnemy(AircraftType::kRaptor, 900.f, 7000.f);
 	AddEnemy(AircraftType::kAvenger, -300.f, 7250.f);
-	AddEnemy(AircraftType::kAvenger, -650.f, 7250.f);
+	AddEnemy(AircraftType::kAvenger, -550.f, 7250.f);
+	AddEnemy(AircraftType::kAvenger, -750.f, 7250.f);
 	AddEnemy(AircraftType::kAvenger, -900.f, 7250.f);
 	AddEnemy(AircraftType::kAvenger, 300.f, 7250.f);
 	AddEnemy(AircraftType::kAvenger, 650.f, 7250.f);
@@ -452,6 +461,7 @@ void World::AddEnemies()
 	AddEnemy(AircraftType::kAvenger, -900.f, 7850.f);
 	AddEnemy(AircraftType::kRaptor, -900.f, 8000.f);
 	AddEnemy(AircraftType::kRaptor, -650.f, 8000.f);
+	AddEnemy(AircraftType::kRaptor, -450.f, 8000.f);
 	AddEnemy(AircraftType::kRaptor, -250.f, 8000.f);
 	AddEnemy(AircraftType::kRaptor, 0.f, 8000.f);
 	AddEnemy(AircraftType::kRaptor, 250.f, 8000.f);
@@ -472,11 +482,15 @@ void World::AddEnemies()
 	AddEnemy(AircraftType::kAvenger, -900.f, 8850.f);
 	AddEnemy(AircraftType::kBoss, 0.f, 9000.f);
 	AddEnemy(AircraftType::kBoss, -950.f, 9000.f);
-	AddEnemy(AircraftType::kBoss, -450.f, 9000.f);
-	AddEnemy(AircraftType::kBoss, -250.f, 9000.f);
+	AddEnemy(AircraftType::kBoss, -750.f, 9000.f);
+	AddEnemy(AircraftType::kBoss, -550.f, 9000.f);
+	AddEnemy(AircraftType::kBoss, -350.f, 9000.f);
+	AddEnemy(AircraftType::kBoss, -150.f, 9000.f);
 	AddEnemy(AircraftType::kBoss, 900.f, 9000.f);
-	AddEnemy(AircraftType::kBoss, 450.f, 9000.f);
-	AddEnemy(AircraftType::kBoss, 200.f, 9000.f);
+	AddEnemy(AircraftType::kBoss, 750.f, 9000.f);
+	AddEnemy(AircraftType::kBoss, 550.f, 9000.f);
+	AddEnemy(AircraftType::kBoss, 350.f, 9000.f);
+	AddEnemy(AircraftType::kBoss, 150.f, 9000.f);
 
 
 	//Sort according to y value so that lower enemies are checked first
