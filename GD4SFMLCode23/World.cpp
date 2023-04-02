@@ -9,6 +9,8 @@
 #include <iostream>
 #include <limits>
 
+//Berk Tatar D00225745
+
 World::World(sf::RenderTarget& output_target, FontHolder& font, SoundPlayer& sounds, bool networked)
 	:m_target(output_target)
 	,m_camera(output_target.getDefaultView())

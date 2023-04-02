@@ -10,6 +10,8 @@
 #include <SFML/System/Thread.hpp>
 #include <SFML/System/Vector2.hpp>
 
+//Berk Tatar D00225745
+
 class GameServer
 {
 public:

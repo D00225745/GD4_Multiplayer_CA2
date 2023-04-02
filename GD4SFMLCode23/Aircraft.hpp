@@ -7,6 +7,8 @@
 #include "TextNode.hpp"
 #include "ProjectileType.hpp"
 
+//Berk Tatar D00225745
+
 class Aircraft : public Entity
 {
 public:

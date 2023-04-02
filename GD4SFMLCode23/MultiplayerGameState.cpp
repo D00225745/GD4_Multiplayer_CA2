@@ -10,6 +10,8 @@
 #include "PickupType.hpp"
 #include <iostream>
 
+//Berk Tatar D00225745
+
 sf::IpAddress GetAddressFromFile()
 {
 	{

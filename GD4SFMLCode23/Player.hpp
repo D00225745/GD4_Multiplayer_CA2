@@ -8,6 +8,7 @@
 #include "CommandQueue.hpp"
 #include <SFML/Network/TcpSocket.hpp>
 
+//Berk Tatar D00225745
 
 class Player
 {

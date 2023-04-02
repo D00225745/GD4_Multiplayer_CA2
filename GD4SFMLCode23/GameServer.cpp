@@ -10,6 +10,8 @@
 #include "Utility.hpp"
 #include <iostream>
 
+//Berk Tatar D00225745
+
 //It is essential to set the sockets to non-blocking - m_socket.setBlocking(false)
 //otherwise the server will hang waiting to read input from a connection
 

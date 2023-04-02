@@ -15,6 +15,9 @@
 
 #include <iostream>
 
+
+//Berk Tatar D00225745
+
 namespace
 {
 	const std::vector<AircraftData> Table = InitializeAircraftData();
